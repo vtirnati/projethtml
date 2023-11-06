@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../repertoire_principal"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projet-sio-2324-master"
+	}
+}
