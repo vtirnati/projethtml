@@ -11,14 +11,24 @@ body{
     margin: 0;
     letter-spacing: 0.1rem; /* 1px */
     line-height: 1.6; /* 16px */
-    background-color: #2b2a33;
-    color: #fff;
+    background-color:var(--theme-bg-color);
+    color: var(--theme-text-color);
 }
 h1,h2,h3,p,ul{ /* contexte de balises ayant les mêmes props */
     margin: 0;
     padding: 0;
     font-weight: normal;
     list-style: none;
+}
+/*variables css */
+:root{
+    --theme-bg-color: #42414d;
+    --theme-text-color: #ffffff;
+    --theme-link-color: rgb(85, 70, 160);
+    --theme-header-bg:rgb(50, 35, 126); ;
+    --theme-btn-primary: rgb(9, 132, 225);
+    --theme-btn-secondary: #a13f3f;
+    --theme-btn-default: #ccc;
 }
 button{
     padding: 0;
@@ -28,18 +38,41 @@ button{
 }
 a{
     text-decoration: none;
-    color: rgb(121, 98, 235);
+    color: (var(--theme-link-color))
     
 }
 /* theme css */
+.btn-theme-g{
+    display: inline-block;
+    width: 20rem; /*200px */
+    line-height: 3rem;
+    padding: 1rem;
+    background-color: var(--theme-btn-secondary);
+    text-align: center;
+    margin-right: .6rem;
+
+
+}
+.btn-info{
+    padding: 0.7rem;
+    color: var(--theme-text-color);
+}
+.btn-primary{
+    background-color: var(--theme-btn-primary);
+    color: #ffffff;
+}
+.btn-secondary{
+    background-color: var(--theme-btn-secondary);
+    color: inherit;
+}
 
 header > h1{
-    background-color: rgba(0, 150, 136,1.0);
+    background-color: var(--theme-header-bg);
     text-align: center;
     line-height: 8rem;
     font-weight:bolder;
     font-size: 4rem;
-    color: #fff;
+    color: var(--theme-text-color);
 }
 header > h1 span{
     vertical-align: 0.5rem; /* 5px */
@@ -47,7 +80,7 @@ header > h1 span{
 section{
     max-width: 100rem; /* 1200px */
     margin: 5rem auto;
-    background-color: #42414d;
+    background-color: #474747;
     padding: 1rem;
 }
 section h2, 
